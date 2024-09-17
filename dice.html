@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+            #diceout{
+                max-width: 500px;
+                width:400px;
+                height: 100px;
+                display: flex;
+                
+            }
+            #dice1,#dice2,#dice3,#dice4{
+                border: 1px solid;
+                border-radius: 10px;
+                margin-left: 4px;
+                align-items: center;
+            }
+            #dice1{
+                flex: 1;
+                width: 100px;
+                height: 100px;
+                font-size: 50px;
+                
+            }
+            #dice2{
+                flex: 1;
+                width: 100px;
+                height: 100px;
+            }
+            #dice3{
+                flex: 1;
+                width: 100px;
+                height: 100px;
+            }
+            #dice4{
+                flex: 1;
+                width: 100px;
+                height: 100px;
+            }
+            #roll{
+                margin-top: 20px;
+                width: 100px;
+                height: 50px;
+            }
+           
+
+
+        </style>
+        <script>
+            function rollon(){
+            i=Math.floor(Math.random()*6)+1;
+            document.getElementById("he1").setAttribute("src","dice"+i+".png");
+            j=Math.floor(Math.random()*6)+1;
+            document.getElementById("he2").setAttribute("src","dice"+j+".png");
+            k=Math.floor(Math.random()*6)+1;
+            document.getElementById("he3").setAttribute("src","dice"+k+".png");
+            l=Math.floor(Math.random()*6)+1;
+            document.getElementById("he4").setAttribute("src","dice"+l+".png");
+            }
+            
+
+        </script>
+    </head>
+    <body>
+        <center><div id="diceout">
+            <div id="dice1">
+                <center>
+                    <img src="dice1.png" id="he1" width="100px" height="100px">
+                </center>
+                
+            </div>
+            <div id="dice2">
+                <img src="dice1.png" id="he2" width="100px" height="100px">
+
+            </div>
+            <div id="dice3">
+                <img src="dice1.png" id="he3" width="100px" height="100px">
+
+            </div>
+            <div id="dice4">
+                <img src="dice1.png" id="he4" width="100px" height="100px">
+
+            </div>
+
+        </div>
+        <button id="roll" onclick="rollon()">ROLL</button>
+    
+        </center>
+
+    </body>
+</html>

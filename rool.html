@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll</title>
+    <script>
+        function rollon() {
+            let r = Math.floor(Math.random() * 6) + 1; // Corrected Math object and added +1
+            document.getElementById("he").setAttribute("src", "dice" + r + ".png"); // Corrected "scr" to "src"
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <div id="diceout">
+            <div id="dice1">
+                <center>
+                    <img src="dice1.png" id="he" width="100px" height="100px">
+                </center>
+            </div>
+            <div id="dice2">
+                <img src="dice1.png" width="100px" height="100px">
+            </div>
+            <div id="dice3">
+                <img src="dice1.png" width="100px" height="100px">
+            </div>
+            <div id="dice4">
+                <img src="dice1.png" width="100px" height="100px">
+            </div>
+        </div>
+        <button id="roll" onclick="rollon()">ROLL</button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            ok=prompt("enter the process:");
+            var number=prompt("enter the 4 digts:");
+            var digit=[parseInt(number[0]),parseInt(number[1]),parseInt(number[2]),parseInt(number[3])];
+            if(ok=='e'){
+           
+            for(var i=0 ;i<4;i++){
+                digit[i]=(digit[i]+7) % 10;
+                console.log(digit[i]);
+            }
+
+            var temp=digit[0];
+            digit[0]=digit[2];
+            digit[2]=temp;
+
+            var temp=digit[1];
+            digit[1]=digit[3];
+            digit[3]=temp;
+            document.writeln("Encrypted integer:"+digit[0]+" "+digit[1]+" "+digit[2]+" "+digit[3]+" ");
+        }
+        else if(oh='d'){
+            var temp=digit[0];
+            digit[0]=digit[2];
+            digit[2]=temp;
+
+            var temp=digit[1];
+            digit[1]=digit[3];
+            digit[3]=temp;
+
+            for(var i=0 ;i<4;i++){
+                digit[i]=(digit[i]-7)%10;
+                if(digit[i]<0){
+                    digit[i]=digit[i]+10;
+                }
+                console.log(digit[i]);
+                
+        }
+        document.writeln("Encrypted integer:"+digit[0]+" "+digit[1]+" "+digit[2]+" "+digit[3]+" ");
+    }
+
+        </script>
+    </head>
+    <body>
+        <div id="msg"> </div>
+
+    </body>
+</html>

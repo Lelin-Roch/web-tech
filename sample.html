@@ -1,0 +1,28 @@
+<html>
+    <head><title>Encryption</title>
+    
+        <script>
+            function hello(event){
+            var name=document.getElementById("name").value;
+           
+            var fname=document.getElementById("father").value;
+            document.writeln("<p>name:"+name+"fname:"+fname+"</p>");
+            }
+
+            
+        </script>
+    </head>
+    <body>
+        <div>
+            <form onsubmit="hello(event)">
+                <LABEL>Enter your name: </LABEL>
+                <input type="text" name="fullname" id="name"><br><br>
+                <label>Fathers name:</label>
+                <input type="text" name="Fathers" id="father">
+                <input type="submit">
+
+            </form>
+        </div>
+    </body>
+    
+</html>

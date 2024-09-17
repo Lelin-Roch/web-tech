@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function findLargestNumber() {
+            let counter = 0;
+            let largest = -1; // Initialize largest with a value less than any single-digit number
+        
+            while (counter < 10) {
+                let number = parseInt(prompt("Enter a single-digit number:"));
+        
+                if (number > largest) {
+                    largest = number;
+                }
+        
+                counter++;
+            }
+        
+            console.log(`The largest number is: ${largest}`);
+        }
+        findLargestNumber();
+
+        </script>
+        
+    </head>
+    <body>
+
+    </body>
+</html>

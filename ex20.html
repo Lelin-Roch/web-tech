@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Values</title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>N</th>
+                <th>10*N</th>
+                <th>100*N</th>
+                <th>1000*N</th>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                for (let n = 1; n <= 6; n++) {
+                    document.write("<tr>");
+                    document.write("<td>" + n + "</td>");
+                    document.write("<td>" + (10 * n) + "</td>");
+                    document.write("<td>" + (100 * n) + "</td>");
+                    document.write("<td>" + (1000 * n) + "</td>");
+                    document.write("</tr>");
+                }
+            </script>
+        </tbody>
+    </table>
+</body>
+</html>
